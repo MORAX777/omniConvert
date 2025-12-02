@@ -22,7 +22,7 @@ const ToolUI = ({ title, icon: Icon, color, endpoint, formats }) => {
         }
 
         try {
-            const response = await fetch(`http://localhost:5000/api/v1${endpoint}`, {
+            const response = await fetch(`https://omniconvert-qzw1.onrender.com/api/v1${endpoint}`, {
                 method: "POST",
                 body: formData
             });
